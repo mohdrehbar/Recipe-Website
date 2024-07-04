@@ -1,0 +1,183 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+#nav-list {
+  list-style-type: none;
+  font-size: 2.5rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  padding: 15px;
+  
+}
+
+nav {
+  width: 100%;
+  overflow: hidden;
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+  background-image: linear-gradient(45deg, #85ffbd 0%, #fffb7d 100%);
+}
+.nav-container {
+  background-color: #21d4fd;
+  background-image: linear-gradient(19deg, #21d4fd 0%, #b721ff 100%);
+  width: 100vw;
+  min-height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+#nav-logo {
+  font-size: 2.5rem;
+  color: azure;
+}
+
+a {
+  text-decoration: none;
+  color: azure;
+}
+
+#nav-items {
+  display: flex;
+  gap: 20px;
+}
+
+.footer {
+  background-color: #21d4fd;
+  background-image: linear-gradient(19deg, #21d4fd 0%, #b721ff 100%);
+  text-align: center;
+  width: 100%;
+  min-height: 30px;
+}
+
+.footer > p {
+  color: azure;
+  font-size: 1.5rem;
+}
+
+.content-box {
+  width: 70%;
+  margin: auto;
+  border: 1px solid black;
+  background-color: azure;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  padding: 2rem;
+  box-shadow: 2px 2px 80px black;
+}
+
+.right-box > img {
+  height: 300px;
+  width: 300px;
+  border-radius: 25px;
+  transition: all 1.5s linear 0s;
+
+}
+
+.right-box:hover{
+    transform: scale(1.2);
+}
+
+.item1,
+.item2,
+.item3,
+.item4,
+.item5 {
+  display: flex;
+  margin-left: 70px;
+  margin-right: 70px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+
+.left-box {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+
+#h1,
+#h2,
+#h3,
+#h4,
+#h5 {
+  font-size: 2rem;
+  font-family: "Roboto Slab", serif;
+  
+}
+
+#h11,
+#h111,
+#h22,
+#h222,
+#h33,
+#h333,
+#h44,
+#h444,
+#h55,
+#h555 {
+  font-size: 1.5rem;
+  font-family: "Baskervville SC", serif;
+}
+
+#i1,
+#r1,
+#i2,
+#r2,
+#i3,
+#r3,
+#i4,
+#r4,
+#i5,
+#r5 {
+  font-size: 1.2rem;
+  font-family: "Mukta", sans-serif;
+}
+
+.right-box{
+    position: relative;
+    overflow: hidden;
+    transition: all 1s linear 0s;
+    border-radius: 25px;
+    
+}
+
+.right-box>.overlay{
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    top: 0;
+    left: 0;
+    background-color: rgba(66, 55, 55, 0.725);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    opacity: 0;
+    transition: all 1s linear 0s;
+    
+}
+
+.right-box:hover .overlay{
+    opacity: 1;
+}
+
+.right-box>.overlay>span{
+    color: white;
+    font-size: 1.2rem;
+}
+
+
